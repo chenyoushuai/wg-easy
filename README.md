@@ -50,8 +50,8 @@ To automatically install & run wg-easy, simply run:
 $ public_ip = curl icanhazip.com
 $ docker run -d \
   --name=wg-easy \
-  -e WG_HOST= $public_ip \
-  -e PASSWORD= <b> your_password </b> \
+  -e WG_HOST=$public_ip \
+  -e PASSWORD=<b>your_password</b> \
   -v ~/.wg-easy:/etc/wireguard \
   -p 51820:51820/udp \
   -p 51821:51821/tcp \
